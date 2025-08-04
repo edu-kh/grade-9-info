@@ -1,356 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Moul&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Moul&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>ព័ត៌មានសិស្សទី៩</title>
+  
   <style>
     body {
+     font-family: "Segoe UI", sans-serif,  "Moul";
+      background-color: rgb(216, 236, 253);
       margin: 0;
-      font-family: "Segoe UI", sans-serif,  "Moul";
-      padding: 2rem;
-       /*background: url('images') no-repeat center center fixed;
-        background-size: cover; */
-        background-color: #BED0F4;
-     font-weight: 400;
-     font-style: normal;
-
-
-     
+      padding: 20px;
+      font-weight: 400;
+      font-style: normal;
     }
-
     form {
-      max-width: 900px;
-      margin: auto;
-     
-      padding: 2rem;
-      border-radius: 15px;
-     
-      background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
-    backdrop-filter: blur(10px);          /* blur background behind */
-     -webkit-backdrop-filter: blur(10px);  /* for Safari support */
-     border-radius: 20px;
-  
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-     
+       background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      padding: 20px;
+      max-width: 800px;
+      margin: 0px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
     }
 
-    .header {
+     .form-header {
       display: flex;
       align-items: center;
       gap: 15px;
       margin-bottom: 2rem;
+      
     }
-
-    .header img {
-      width: 60px;
-      height: 60px;
-    }
-
-    .header h2 {
-      font-size: 0.96rem;
-      color: #333;
-      margin: 0;
-     
-    }
-
-    .row {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-    }
-
-    .row input[type="text"],
-    .row input[type="date"],
-    .row input[type="tel"],
-    .row input[type="file"],
-    .row select {
-     width: 80%;
-      padding: 12px;
-      border-radius: 10px;
-      border: 1px solid #dee9ee;
-      font-size: 1rem;
-      text-align: justify;
-      font-family: "Battambang", system-ui;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 16px;
-     
-    }
-
-    .row input[type="file"]{
-      background-color: bisque;
+     .form-header h2 {
+     font-size: 0.96rem;
     }
     
-    .row label {
-      font-weight: 500;
-      width: 100%;
-      margin-bottom: 0.3rem;
+    .logo {
+      height: 50px;
     }
-
-    .radio-group {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: nowrap;
+    .form-header {
+      text-align: left;
+      margin-bottom: 20px;
     }
-
-    .radio-group label {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-direction: row-reverse; /* input box on right */
-      cursor: pointer;
-      font-size: 1rem;
-      white-space: nowrap;
-    }
-
-    input[type="radio"], input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      appearance: none;
-      border: 2px solid #555;
-      border-radius: 0;
-      background: #fff;
-      cursor: pointer;
-      position: relative;
-    }
-
-    input[type="radio"]:checked,
-    input[type="checkbox"]:checked {
-      background-color: hsl(128, 91%, 29%);
-      border: 2px solid hsl(128, 91%, 29%);
-    }
-
-    .buttons {
+    .form-row {
       display: flex;
       gap: 15px;
-      margin-top: 1rem;
+      margin-bottom: 15px;
       flex-wrap: wrap;
     }
-
-    .btn {
+    .triple > label {
+      flex: 1 1 30%;
+    }
+    label {
       flex: 1;
-      padding: 12px;
-      border: none;
-      border-radius: 12px;
-      font-weight: bold;
-      font-size: 1rem;
-      color: #fff;
-      cursor: pointer;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease;
-      font-family: "Segoe UI", sans-serif, Khmer os;
+      display: flex;
+      flex-direction: column;
+      font-weight: normal;
+    }
+    input, select {
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+       font-family: "Battambang", system-ui;
+        font-size: 1rem;
+    }
+    .options {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+    }
+    .square-radio input[type="radio"] {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #555;
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 3px;
+      position: relative;
+    }
+    .square-radio input[type="radio"]:checked::after {
+      content: "✅";
+      position: absolute;
+      top: -8px;
+      left: -4px;
+      color: green;
+      font-size: 18px;
+      font-style: bold;
+    }
+      .form-buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
-    .btn:hover {
+    button {
+      flex: 1;
+      min-width: 120px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      
+      color: rgb(231, 230, 230);
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+       font-family: "Battambang", system-ui;
+    }
+
+     
+
+    button:hover {
       transform: translateY(-2px);
     }
-
-    .btn.clear {
-      background: linear-gradient(to right, #717d80, #a48c7f);
-    }
-
-    .btn.submit {
-      background: linear-gradient(to right, #02a8d6, #0467e0);
-    }
-
-    #message {
-      margin-top: 20px;
+    #status {
+      margin-top: 15px;
       text-align: center;
-      font-weight: bold;
-    }
-
-    #message.success {
+      font-weight: normal;
       color: green;
     }
-
-    #message.error {
-      color: red;
-    }
-
     @media (max-width: 600px) {
-      .row {
-        flex-direction: column;
-      }
-
-      .buttons {
+      .form-buttons {
         flex-direction: row;
       }
     }
+     .custom-file-input {
+    display: none;
+  }
+
+  .custom-file-label {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: rgb(223, 223, 223);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Battambang", system-ui;
+    height: 30px;
+  }
+ .custom-file-label:hover {
+      transform: translateY(-2px);
+    }
+
+  .filename-display {
+    margin-left: 10px;
+    font-family: "Battambang", system-ui;
+    font-size: 0.95rem;
+  }
+  .btn3d {
+	position: relative;
+	top: -6px;
+	border: 0;
+	transition: all 40ms linear;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+	-moz-outline-style: none;
+	outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+	top: 2px;
+}
+.btn3d.btn-success {
+	box-shadow: 0 0 0 1px #31c300 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #5eb924, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+	background-color: #42a302;
+}
+
+.btn3d.btn-success:active,
+.btn3d.btn-success.active {
+	box-shadow: 0 0 0 1px #30cd00 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+	background-color: #42a302;
+}
+
+.btn3d.btn-default {
+	color: #666666;
+	box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.10) inset, 0 8px 0 0 #BEBEBE, 0 8px 8px 1px rgba(0, 0, 0, .2);
+		background-color: #bab8b8;
+}
+
+.btn3d.btn-default:active,
+.btn3d.btn-default.active {
+	color: #ffffff;
+	box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, .1);
+	background-color: #bab8b8;
+}
+
+
   </style>
 </head>
 <body>
-
-<form id="signup-form">
-  <div class="header">
-    <img src="moeys.png" alt="Logo" />
-    <h2 class="sitename">ព័ត៌មានសិស្ស<span class="auto-input ti"></span></h2>
-  </div>
-
-  <div class="row">
-    <div style="flex:1">
-   <label for="name">ឈ្មោះសិស្ស</label>
-      <input type="text" name="name" id="name" placeholder="នាមត្រកូល នាមខ្លួន" required />
+  <form id="signupForm">
+    <div class="form-header">
+      <img src="moeys.png" alt="Logo" class="logo">
+     <h2 class="sitename">ព័ត៌មានសិស្ស<span class="auto-input ti"></span></h2>
     </div>
-    <div style="flex:1">
-      <div class="radio-group">
-          <div> <label>ភេទ</label></div>
-        <label>ប្រុស <input type="radio" name="sex" value="ប្រុស" required /></label>
-        <label>ស្រី <input type="radio" name="sex" value="ស្រី" /></label>
-      </div>
+    <div class="form-row">
+      <label>ឈ្មោះសិស្ស<input type="text" name="name"  placeholder="នាមត្រកូល នាមខ្លួន" required></label>
+      <label>
+        <div class="options" id="sex">ភេទ
+          <label class="square-radio" >ប្រុស<input type="radio" name="sex" value="ប្រុស"   required></label>
+          <label class="square-radio"  >ស្រី<input type="radio" name="sex" value="ស្រី" ></label>
+        </div>
+      </label>
     </div>
-  </div>
-
-  <div class="row">
-    <div style="flex:1">
-      <label for="dob">ថ្ងៃខែឆ្នាំកំណើត</label>
-      <input type="text" name="dob" id="dob" placeholder="ថ្ងៃ / ខែ / ឆ្នាំ" required />
+    <div class="form-row">
+      <label>ថ្ងៃខែឆ្នាំកំណើត<input type="text" name="dob" placeholder="ថ្ងៃ / ខែ / ឆ្នាំ" required></label>
+      <label>ទីកន្លែងកំណើត<input type="text" name="pob" placeholder="ខេត្ត ឬ ក្រុង" required></label>
     </div>
-    <div style="flex:1">
-      <label for="birthplace">ទីកន្លែងកំណើត</label>
-      <input type="text" name="birthplace" id="birthplace" placeholder="ខេត្ត ឬ ក្រុង" required />
+    <div class="form-row">
+      <label>រៀនថ្នាក់ទី
+        <select name="grade">
+           <option value="" required>ជ្រើសរើស</option>
+        <option>12A</option>
+        <option>12B</option>
+        <option>12C</option>
+        <option>12D</option>
+        <option>12E</option>
+        <option>12F</option>
+        </select>
+      </label>
+      <label>
+        <div class="options">ភាសា
+          <label class="square-radio">អង់គ្លេស<input type="radio" name="language" value="អង់គ្លេស" required></label>
+          <label class="square-radio">បារាំង<input type="radio" name="language" value="បារាំង"></label>
+        </div>
+      </label>
     </div>
-  </div>
-
-  <div class="row">
-    <div style="flex:1">
-     <label for="grade">រៀនថ្នាក់ទី &ensp;</label>
-      <select name="grade" id="grade" required>
-        <option value="">ជ្រើសរើស</option>
-        <option>9A</option>
-        <option>9B</option>
-        <option>9C</option>
-        <option>9D</option>
-        <option>9E</option>
-        <option>9F</option>
-        <option>9G</option>
-      </select>
+    <!-- 
+   <div class="form-row triple">
+     <label>សម័យប្រឡងបឋមភូមិ<input type="text" name="date_exam" placeholder="ថ្ងៃ / ខែ / ឆ្នាំ" required></label>
+      <label>លេខបន្ទប់<input type="number" name="room_no" required></label>
+      <label>លេខតុ<input type="number" name="table_no" required></label>
+     -->
+    <div class="form-row">
+      <label>ឈ្មោះឪពុក<input type="text" name="father_name" required></label>
+      <label>មុខរបរឪពុក<input type="text" name="father_job" required></label>
     </div>
-    <div style="flex:1">
+    <div class="form-row">
+      <label>ឈ្មោះម្ដាយ<input type="text" name="mother_name" required></label>
+      <label>មុខរបរម្ដាយ<input type="text" name="mother_job" required></label>
+    </div>
+    <div class="form-row">
+      <label>លេខទូរសព្ទផ្ទាល់ខ្លួន<input type="tel" name="phone" required></label>
+     <div> <label>រូបថតសំបុត្រកំណើត</label>
+      <label class="custom-file-label">
+  ជ្រើសរូបភាព <i class="fa-regular fa-image"></i>
+  <input type="file" name="image" class="custom-file-input" accept=".jpg,.jpeg,.png" required onchange="showFileName(this)">
+</label>
+<span class="filename-display" id="file-name" style="color:red">មិនទាន់ជ្រើសរូបភាព</span>
+</div>
+    </div>
+    <div class="form-buttons">
+        <button type="reset" class="btn3d btn btn-default btn-lg">សម្អាត <i class="fa-solid fa-arrows-rotate"></i></button>
+      <button type="submit" class="btn btn-success btn-lg btn3d">រក្សាទុក <i class="fa-solid fa-floppy-disk"></i></button>
+    
       
-      <div class="radio-group">
-        <div><label>ភាសា</label></div>
-        <label>អង់គ្លេស <input type="radio" name="language" value="អង់គ្លេស" required /></label>
-        <label>បារាំង <input type="radio" name="language" value="បារាំង" /></label>
-      </div>
     </div>
-  </div>
+   <p id="status" ></p> 
+  </form>
 
-  <div class="row">
-    <div style="flex:1">
-      <label for="father_name">ឈ្មោះឪពុក</label>
-      <input type="text" name="father_name" id="father_name" required />
-    </div>
-    <div style="flex:1">
-      <label for="father_job">មុខរបរឪពុក</label>
-      <input type="text" name="father_job" id="father_job" required />
-    </div>
-  </div>
+ <script>
+document.getElementById("signupForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
 
-  <div class="row">
-    <div style="flex:1">
-      <label for="mother_name">ឈ្មោះម្ដាយ</label>
-      <input type="text" name="mother_name" id="mother_name" required />
-    </div>
-    <div style="flex:1">
-      <label for="mother_job">មុខរបរម្ដាយ</label>
-      <input type="text" name="mother_job" id="mother_job" required />
-    </div>
-  </div>
+  const form = e.target;
+  const status = document.getElementById("status");
+  
+  status.textContent = "⏳កំពុងរក្សាទុក...";
 
-  <div class="row">
-    <div style="flex:1">
-      <label for="phone">លេខទូរសព្ទផ្ទាល់ខ្លួន</label>
-      <input type="tel" name="phone" id="phone" required />
-    </div>
-    <div style="flex:1">
-      <label for="image">រូបថតសំបុត្រកំណើត</label>
-      <input type="file" name="image" accept=".png,.jpg" required />
-    </div>
-  </div>
+  const formData = new FormData(form);
+ const imageInput = document.querySelector('input[name="image"]');
+const imageFile = imageInput.files && imageInput.files[0];
 
-  <div class="buttons">
-    <button type="reset" class="btn clear">សម្អាត</button>
-    <button type="submit" class="btn submit">រក្សាទុក</button>
-  </div>
+if (!imageFile || imageFile.size === 0 || !imageFile.type.match(/^image\/(jpeg|png)$/)) {
+  status.textContent = "❌ សូមជ្រើសរូបភាព (.jpg, .png)";
+  return;
+}
 
-  <div id="message"></div>
-</form>
 
-<script>
-  const form = document.getElementById("signup-form");
-  const messageBox = document.getElementById("message");
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwIbF_jDWvY2v4A1iCFLE_iDhjIeu8Zds_n4BnGcZt7e-5oNap96zSXGIz9McKXsmFlCQ/exec"; // Replace with your actual Google Apps Script URL
+  const reader = new FileReader();
+  reader.onload = async function () {
+    const imageBase64 = reader.result;
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    messageBox.textContent = "កំពុងរក្សាទុក...";
-    messageBox.className = "";
 
-    const formData = new FormData(form);
-    const imageFile = formData.get("image");
+    const data = new URLSearchParams();
+    formData.forEach((value, key) => {
+      if (key !== "image") data.append(key, value);
+    });
+    data.append("image", imageBase64);
+    data.append("imageType", imageFile.type);
 
-    const reader = new FileReader();
-    reader.onload = async () => {
-      const base64 = reader.result;
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwIbF_jDWvY2v4A1iCFLE_iDhjIeu8Zds_n4BnGcZt7e-5oNap96zSXGIz9McKXsmFlCQ/exec", {
+        method: "POST",
+        body: data,
+      });
 
-      const payload = {
-        name: formData.get("name"),
-        sex: formData.get("sex"),
-        dob: formData.get("dob"),
-        birthplace: formData.get("birthplace"),
-        grade: formData.get("grade"),
-        language: formData.get("language"),
-        father_name: formData.get("father_name"),
-        father_job: formData.get("father_job"),
-        mother_name: formData.get("mother_name"),
-        mother_job: formData.get("mother_job"),
-        phone: formData.get("phone"),
-        imageBase64: base64,
-        imageName: imageFile.name,
-        imageType: imageFile.type
-      };
-
-      try {
-        const res = await fetch(SCRIPT_URL, {
-          method: "POST",
-          body: new URLSearchParams(payload)
-        });
-        const text = await res.text();
-        if (text.includes("Success")) {
-          messageBox.textContent = "✅ រក្សាទុករួចរាល់!";
-          messageBox.className = "success";
-          form.reset();
-        } else {
-          messageBox.textContent = text;
-          messageBox.className = "error";
-        }
-      } catch (err) {
-        messageBox.textContent = "❌ Error: " + err.message;
-        messageBox.className = "error";
+      const result = await response.text();
+      if (response.ok && result.includes("Success")) {
+        status.textContent = "✅ រក្សាទុករួចរាល់!";
+        form.reset();
+      } else {
+        status.textContent = "❌ បញ្ហាក្នុងការផ្ញើទិន្នន័យ: " + result;
       }
-    };
+    } catch (err) {
+      status.textContent = "❌ បញ្ហា: " + err.message;
+    }
+  };
+  reader.readAsDataURL(imageFile);
+});
 
-    reader.readAsDataURL(imageFile);
+  // Reset filename display when form is reset
+  document.getElementById("signupForm").addEventListener("reset", function () {
+    document.getElementById("file-name").textContent = "មិនទាន់ជ្រើសរូបភាព";
+     document.getElementById("file-name").style.color = "red";
   });
+
+  function showFileName(input) {
+  const fileNameSpan = document.getElementById("file-name");
+
+  if (input.files && input.files[0]) {
+    fileNameSpan.textContent = "​បានជ្រើសរូបភាពហើយ ✅";
+    fileNameSpan.style.color = "green"; // ✅ Set to green when selected
+  } else {
+    fileNameSpan.textContent = "មិនទាន់ជ្រើសរូបភាព";
+    fileNameSpan.style.color = "red"; // Optional: red when none
+  }
+}
+  
+  
 </script>
-<!-- sitename-->
+
+  <!-- sitename-->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
       var tyed = new Typed(".auto-input",{
-      strings: [" នៃវិទ្យាល័យហ៊ុនសែនមិត្តភាព", "សម្រាប់ការប្រឡងសញ្ញាបត្រមធ្យមសិក្សាបឋមភូមិ"],
+      strings: [" នៃវិទ្យាល័យហ៊ុនសែនមិត្តភាព", "សម្រាប់ការប្រឡងសញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ"],
       typeSpeed: 150,
       
       loop: true
   })
   </script>
-
-
 </body>
 </html>
