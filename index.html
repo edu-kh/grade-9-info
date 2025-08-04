@@ -307,7 +307,7 @@ if (!imageFile || imageFile.size === 0 || !imageFile.type.match(/^image\/(jpeg|p
     data.append("imageType", imageFile.type);
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwIbF_jDWvY2v4A1iCFLE_iDhjIeu8Zds_n4BnGcZt7e-5oNap96zSXGIz9McKXsmFlCQ/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwIuNPIFzxC2-t3orE8CaqFcYIgTgTQwvoOsGqUtN8IHaJaOYqaiVBx3xbRv0yodnkHLw/exec", {
         method: "POST",
         body: data,
       });
@@ -359,3 +359,4 @@ if (!imageFile || imageFile.size === 0 || !imageFile.type.match(/^image\/(jpeg|p
   </script>
 </body>
 </html>
+
