@@ -324,7 +324,7 @@ document.getElementById("signupForm").addEventListener("submit", async function 
 
       const result = await response.text();
       if (response.ok && result.includes("Success")) {
-        status.textContent = "✅ រក្សាទុករួចរាល់!";
+        status.textContent = "✅ ជោគជ័យ!";
         form.reset();
       } else {
         status.textContent = "❌ បញ្ហាក្នុងការផ្ញើទិន្នន័យ: " + result;
