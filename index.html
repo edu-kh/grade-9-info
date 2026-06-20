@@ -12,7 +12,7 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        background: #caf4f8;
+        background: linear-gradient(36deg, #7a8a87, #6b9192);
         margin: 0;
         font-family: "Battambang", system-ui;
     }
@@ -20,13 +20,13 @@
         position: sticky;
         top: 0;
         background: #2A394C;
-        padding: 12px 15px;
+        padding: 5px 5px;
         display: flex;
-        
         gap: 12px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         z-index: 10;
         font-family: "Battambang", system-ui;
+        height: auto;
         
     }
     .header-row {
@@ -81,7 +81,7 @@
     .student-header {
         position: sticky;
         top: 0;
-        background: rgb(243, 240, 240);
+        background: rgb(153, 175, 174);
         padding: 10px;
         z-index: 5;
         border-bottom: 1px solid #ddd;
@@ -89,6 +89,7 @@
         display: flex;
         gap: 8px;
         flex-wrap: wrap;
+        border-radius: 6px;
     }
     .student-header input {
         flex: 1;
@@ -389,16 +390,17 @@
     }
      footer a{
       text-decoration: none;
-      color: #4295fa;
+      color: #429bfa;
     }
     .btn-month{
         font-family: "Battambang", system-ui;
-        height: 50px;
+        height: 40px;
         background: #9ba9a7;
         max-width: 120px !important;
         border-radius: 8px;
         min-width: 80px;
         font-size: 1rem;
+        margin-top: 5px;
     }
 </style>
 </head> 
@@ -406,7 +408,7 @@
 
 <header>
     <div class="header-row header-main-row">
-        <h3 style="margin:0;">ពិន្ទុប្រចាំខែ (Geip)</h3>
+        <h4 style="margin:0;">ប្រព័ន្ធបញ្ខូលពិន្ទុប្រចាំខែ (Geip)</h4>
          
         <span id="saveStatush" style="color:green;font-weight:bold;"></span>
     </div>
@@ -499,16 +501,16 @@
 </div>
 
 <footer>
-    <label style="width:100%; color: #8efdf0;"><span>បង្កើតដោយលោក ពីន គុយ ©2026 <a href="https://t.me/pinkoy2022"><i class="fab fa-telegram"> </i> Telegram</a></span></label>
+    <label style="width:100%; color: #8efdf0;"><span>វិ. សហ មិត្តភាព ©2026 <a href="https://t.me/pinkoy2022"><i class="fab fa-telegram"> </i> ពីន គុយ</a></span></label>
 </footer>
 
 <script>
 const SHEET_API_BASE = 'https://script.google.com/macros/s/AKfycbwsQecR2M3hKXhPnEaePa8GsH9K-e3tCKKHp_hFXyKGrwVu_YdlqNERDnUE099TxtSQJw/exec';
 
 const SUBJECTS = [
-  "តែងសេចក្តី", "តាមអាន", "សីលធម៌", "ប្រវត្តិវិទ្យា", "ភូមិវិទ្យា",
+  "តែងសេចក្តី", "តាមអាន", "ភាសាខ្មែរ", "សីលធម៌", "ប្រវត្តិវិទ្យា", "ភូមិវិទ្យា",
     "គណិតវិទ្យា", "រូបវិទ្យា", "គីមីវិទ្យា","ជីវវិទ្យា", "ផែនដីវិទ្យា",
-    "អង់គ្លេស", "គេហវិទ្យា", "បារាំង", "កីឡា", "បំណិន", "សុខភាព", "ចិន", "កុំព្យូទ័រ"
+     "គេហវិទ្យា", "អង់គ្លេស/បារាំង", "កីឡា", "បំណិន",  "ចិន", "កុំព្យូទ័រ"
 ];
 
 let currentStudent = null;
